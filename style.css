@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #11b5cb83, #fcea2556);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.general_container {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  width: 30%;
+  padding: 10px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+div img {
+  width: 100px;
+  height: auto;
+  margin: 10px 0;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2rem;
+  margin: 10px 0;
+  text-align: center;
+}
+
+p {
+  margin: 5px 0;
+  text-align: center;
+}
+
+#humidityValue, #windSpeedValue {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  text-align: center;
+}
+
+div > div > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .general_container {
+    padding: 15px;
+  }
+
+  input[type="text"] {
+    width: 60%;
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  button[type="submit"] {
+    width: 40%;
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  #humidityValue, #windSpeedValue {
+    font-size: 1rem;
+  }
+}
