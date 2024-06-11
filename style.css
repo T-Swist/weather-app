@@ -79,8 +79,14 @@ p {
   text-align: center;
 }
 
-div > div > div > div {
+.humidity_wind_container{
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div > div > div > div {
+  display: fle;
   align-items: center;
   justify-content: center;
 }
